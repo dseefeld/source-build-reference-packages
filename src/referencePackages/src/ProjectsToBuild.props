@@ -122,6 +122,7 @@
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.diagnostics.diagnosticsource/4.3.0/System.Diagnostics.DiagnosticSource.csproj"/>
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.net.http/4.3.3/System.Net.Http.csproj"/>
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.net.http/4.3.0/System.Net.Http.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.memory/4.5.2/System.Memory.csproj"/>
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.linq.expressions/4.3.0/System.Linq.Expressions.csproj"/>
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.linq.expressions/4.1.0/System.Linq.Expressions.csproj"/>
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.io.pipes/4.3.0/System.IO.Pipes.csproj"/>
