@@ -275,5 +275,10 @@
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.componentmodel.composition/4.6.0/System.ComponentModel.Composition.csproj"/>
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.reflection.context/4.6.0/System.Reflection.Context.csproj"/>
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.componentmodel.composition.registration/4.6.0/System.ComponentModel.Composition.Registration.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.security.accesscontrol/4.6.0/System.Security.AccessControl.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.security.cryptography.protecteddata/4.6.0/System.Security.Cryptography.ProtectedData.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.security.permissions/4.6.0/System.Security.Permissions.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.security.principal.windows/4.6.0/System.Security.Principal.Windows.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.configuration.configurationmanager/4.6.0/System.Configuration.ConfigurationManager.csproj"/>
   </ItemGroup>
 </Project>
