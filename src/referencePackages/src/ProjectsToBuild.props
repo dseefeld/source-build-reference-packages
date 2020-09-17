@@ -270,5 +270,10 @@
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.text.json/4.6.0/System.Text.Json.csproj"/>
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.text.json/4.7.0/System.Text.Json.csproj"/>
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.text.json/4.7.1/System.Text.Json.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.codedom/4.6.0/System.CodeDom.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.componentmodel.annotations/4.6.0/System.ComponentModel.Annotations.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.componentmodel.composition/4.6.0/System.ComponentModel.Composition.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.reflection.context/4.6.0/System.Reflection.Context.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.componentmodel.composition.registration/4.6.0/System.ComponentModel.Composition.Registration.csproj"/>
   </ItemGroup>
 </Project>

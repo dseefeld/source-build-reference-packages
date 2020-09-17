@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))/dir.props" />
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <NuspecFile>$(ArtifactsBinDir)system.componentmodel.composition/4.6.0/system.componentmodel.composition.nuspec</NuspecFile>
+    <AssemblyOriginatorKeyFile>$(KeyFileDir)ECMA.snk</AssemblyOriginatorKeyFile>
+   </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputPath>$(ArtifactsBinDir)system.componentmodel.composition/4.6.0/ref/</OutputPath>
+    <IntermediateOutputPath>$(ArtifactsObjDir)system.componentmodel.composition/4.6.0</IntermediateOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="**/ref/$(TargetFramework)/*.cs" />
+    <Compile Include="**/lib/$(TargetFramework)/*.cs" />
+  </ItemGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+        <PackageReference Include="NETStandard.Library" Version="$(NETStandardLibraryPackageVersion)" />
+    </ItemGroup>
+
+</Project>
