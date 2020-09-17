@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))/dir.props" />
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+    <NuspecFile>$(ArtifactsBinDir)system.data.oledb/4.6.0/system.data.oledb.nuspec</NuspecFile>
+    <AssemblyOriginatorKeyFile>$(KeyFileDir)35MSSharedLib1024.snk</AssemblyOriginatorKeyFile>
+   </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputPath>$(ArtifactsBinDir)system.data.oledb/4.6.0/ref/</OutputPath>
+    <IntermediateOutputPath>$(ArtifactsObjDir)system.data.oledb/4.6.0</IntermediateOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="**/ref/$(TargetFramework)/*.cs" />
+    <Compile Include="**/lib/$(TargetFramework)/*.cs" />
+  </ItemGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+        <PackageReference Include="NETStandard.Library" Version="$(NETStandardLibraryPackageVersion)" />
+        <PackageReference Include="Microsoft.Win32.Registry" Version="4.6.0" />
+        <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.6.0" />
+        <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="4.6.0" />
+        <PackageReference Include="System.Memory" Version="4.5.3" />
+        <PackageReference Include="System.Security.Principal.Windows" Version="4.6.0" />
+    </ItemGroup>
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net461" Version="1.0.0-alpha-5" />
+        <Reference Include="System" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Transactions" />
+    </ItemGroup>
+
+</Project>

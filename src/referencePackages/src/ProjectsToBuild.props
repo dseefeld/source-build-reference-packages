@@ -280,5 +280,9 @@
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.security.permissions/4.6.0/System.Security.Permissions.csproj"/>
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.security.principal.windows/4.6.0/System.Security.Principal.Windows.csproj"/>
     <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.configuration.configurationmanager/4.6.0/System.Configuration.ConfigurationManager.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)microsoft.win32.registry/4.6.0/Microsoft.Win32.Registry.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.diagnostics.performancecounter/4.6.0/System.Diagnostics.PerformanceCounter.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.data.odbc/4.6.0/System.Data.Odbc.csproj"/>
+    <ProjectsToBuild Include="$(ReferenceAssemblySourcePath)system.data.oledb/4.6.0/System.Data.OleDb.csproj"/>
   </ItemGroup>
 </Project>
